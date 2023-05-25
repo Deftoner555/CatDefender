@@ -20,6 +20,11 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        if (player == null)
+        {
+            return;
+        }
+        
         //move towards the player
         Vector3 direction = player.position - transform.position;
         transform.Translate(direction.normalized * moveSpeed * Time.deltaTime);
