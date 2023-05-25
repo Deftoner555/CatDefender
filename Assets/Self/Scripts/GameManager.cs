@@ -27,7 +27,6 @@ public class GameManager : MonoBehaviour
     private void RestartGame()
     {
         //Load the Title screen scene
-        MusicPlayer.audioSource.Stop();
         SceneManager.LoadScene("TitleScreen");
     }
 
