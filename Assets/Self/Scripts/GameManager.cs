@@ -5,6 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public AudioSource musicAudioSource;
+
+    private void Start()
+    {
+        //Play the music
+        if (musicAudioSource != null)
+        {
+            musicAudioSource.Play();
+        }
+    }
     private void Update()
     {
         // Check for restart input
@@ -17,6 +27,7 @@ public class GameManager : MonoBehaviour
     private void RestartGame()
     {
         //Load the Title screen scene
+        MusicPlayer.audioSource.Stop();
         SceneManager.LoadScene("TitleScreen");
     }
 
