@@ -16,8 +16,8 @@ public class GameManager : MonoBehaviour
 
     private void RestartGame()
     {
-        // Reload the current scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //Load the Title screen scene
+        SceneManager.LoadScene("TitleScreen");
     }
 
 }
