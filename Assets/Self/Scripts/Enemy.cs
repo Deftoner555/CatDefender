@@ -13,14 +13,24 @@ public class Enemy : MonoBehaviour
 
     //public GameObject deathEffect;
 
+    private void Awake()
+    {
+        // Ensure the player object is present before initializing the enemy
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
+    }
+
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        
     }
 
     private void Update()
     {
-        if (player == null)
+        if (player == null || !player.gameObject.activeSelf)
         {
             return;
         }
