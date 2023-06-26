@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5472114302240984429}
   - component: {fileID: 5472114302240984419}
   - component: {fileID: 6357829032606837740}
+  - component: {fileID: 746166571161730714}
   m_Layer: 19
   m_Name: Enemy_Fox
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: -1869315837
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 8afd73b29f8e34c70b0db80184b8cc7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72de0c64f2c6a498096698322c976a67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -154,3 +155,23 @@ PolygonCollider2D:
       - {x: 0.07512654, y: 0.05016081}
       - {x: 0.06510488, y: 0.050157323}
       - {x: 0.065056406, y: 0.06028763}
+--- !u!95 &746166571161730714
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5472114302240984418}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc0f0d97945e8a445ad91af19a7f4f80, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
