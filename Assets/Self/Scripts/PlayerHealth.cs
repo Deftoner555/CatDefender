@@ -7,6 +7,8 @@ public class PlayerHealth : MonoBehaviour
 
     public int maxHealth = 5;
     private int currentHealth;
+    public GameObject textLose;
+    public GameObject textWin;
 
     private void Start()
     {
@@ -25,10 +27,11 @@ public class PlayerHealth : MonoBehaviour
 
     private void diePlayer()
     {
-        //Handle player death here, such as showing a game over screen, restarting the level, etc.
+        //Handle player death here, such as showing a game over screen,
+        //restarting the level, etc.
         //For now, disable the player object
         gameObject.SetActive(false);
-        Debug.Log("Game Over");
+        textLose.SetActive(true);
     }
 
 }
